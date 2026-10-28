@@ -1,5 +1,5 @@
 CC=gcc
-EXEC=queue.out
+EXEC=abb.out
 GRUPO=1
 NTAR=2
 

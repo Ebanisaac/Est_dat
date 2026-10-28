@@ -3,7 +3,7 @@
  * @brief Cabecera para las funciones relacionadas con productos
 */
 
-#ifndef PRODUCT_H 
+#ifndef PRODUCT_H
 #define PRODUCT_H
 
 #include <stdio.h>
