@@ -41,7 +41,36 @@
  * @param T ABB donde se debe insertar el producto
  * @return SearchTree Referencia al ABB con el producto insertado
  */
-SearchTree abb_insert(Product P, SearchTree T);
+SearchTree abb_insert(Product P, SearchTree T)
+{
+    if(P.name==NULL || P.provider==NULL)
+    {
+        printf("Error");
+        return T;
+    }
+
+    if(T==NULL)
+    {
+        T=malloc(sizeof(struct Node));
+        if(T==NULL)
+        {
+            printf("Error");
+            return T;
+        }
+
+        T->Product=P;
+        T->Left=T->Right=NULL;
+
+        return T;
+    }
+
+    if(P.price<T->Product.price)
+    {
+        T->Left->Product.price=P.price;
+    }
+
+    return 0;
+}
 
 //==============================================================================
 //        FUNCIONES DE BÚSQUEDA

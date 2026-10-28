@@ -25,7 +25,10 @@ typedef PtrToNode Position;
  * derecho.
  */
 struct Node {
-	// Completar en clase: el producto y los dos hijos
+	Product Product;
+	Position Left;
+	Position Right;
+	
 };
 
 //==============================================================================
